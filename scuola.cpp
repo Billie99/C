@@ -20,7 +20,9 @@ void scuola::set(const char* str)
 {
  int len = strlen(str);
  if(this->alunno!=NULL) delete[] this-> alunno;
+ 
  this->alunno = new char[len];
+ 
  strncpy(this->alunno, str, len);
  this->alunno[len] = '\0';
 }
@@ -28,7 +30,9 @@ void scuola::set(const char* str)
 scuola::~scuola()
 {
  if(this->alunno!=NULL) delete[] this->alunno;
+ 
  sleep(3);
+ 
  cout << "Il distruttore e' stato attivato \n";
 }
 
