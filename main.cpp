@@ -6,7 +6,6 @@ using namespace std;
 int main(){
 
 scuola nome;
-scuola cognome;
 
 nome.set("Giandomenico");
 
