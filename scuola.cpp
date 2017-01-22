@@ -1,5 +1,5 @@
 #include <string.h>
-#include "scuola.h"
+#include "scuola.hpp"
 #include <iostream>
 #include <unistd.h>
 
@@ -13,6 +13,7 @@ scuola::scuola()
 
 scuola::scuola(const char str[])
 {
+ this->alunno = NULL;
  this->set(str);
 }
 
@@ -21,7 +22,7 @@ void scuola::set(const char* str)
  int len = strlen(str);
  if(this->alunno!=NULL) delete[] this-> alunno;
  
- this->alunno = new char[len];
+ this->alunno = new char[len + 1];
  
  strncpy(this->alunno, str, len);
  this->alunno[len] = '\0';
