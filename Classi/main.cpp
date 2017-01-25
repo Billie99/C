@@ -1,5 +1,5 @@
 #include <iostream>
-#include "scuola.h"
+#include "scuola.hpp"
 
 using namespace std;
 
