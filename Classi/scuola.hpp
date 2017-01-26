@@ -11,6 +11,7 @@ public:
         void set(const char* str);
         char* get();
         ~scuola();
+        int ricerca();
 };
 
 #endif
