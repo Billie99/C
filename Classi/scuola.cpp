@@ -61,10 +61,10 @@ int scuola::ricerca()
   return i; 
 }
   
- else
+  }
+ 
  cout << "L'elemento non e' stato trovato \n";
  goto Inizio;
-  }
  
 }
 
