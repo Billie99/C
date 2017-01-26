@@ -32,7 +32,7 @@ scuola::~scuola()
 {
  if(this->alunno!=NULL) delete[] this->alunno;
  
- sleep(3);
+ sleep(1);
  
  cout << "Il distruttore e' stato attivato \n";
 }
@@ -41,4 +41,32 @@ char* scuola::get()
 {
  return this->alunno;
 }
+
+int scuola::ricerca()
+{
+ char a;
+ 
+ Inizio:
+ cout << "inserisci il carattere da ricercare \n";
+ cin >> a;
+ 
+ int len = strlen(this->alunno);
+ for(int i = 0; i <= len; i++)
+{
+  
+ if(this->alunno[i] == a)
+{ 
+  
+  cout << "La lettera si trova in posizione : "; 
+  return i; 
+}
+  
+ else
+ cout << "L'elemento non e' stato trovato \n";
+ goto Inizio;
+  }
+ 
+}
+
+
     
