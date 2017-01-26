@@ -10,6 +10,7 @@ scuola nome;
 nome.set("Giandomenico");
 
 cout << nome.get() << endl;
+cout << nome.ricerca() << endl;
 
 return 0;
 
