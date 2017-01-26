@@ -44,29 +44,27 @@ char* scuola::get()
 
 int scuola::ricerca()
 {
- char a;
+  int cont=0;
+  char a;
  
- Inizio:
- cout << "inserisci il carattere da ricercare \n";
+ cout << "Inserisci il carattere da ricercare ";
  cin >> a;
  
  int len = strlen(this->alunno);
- for(int i = 0; i <= len; i++)
+ for(int i = 0; i < len; i++)
 {
   
  if(this->alunno[i] == a)
 { 
-  
-  cout << "La lettera si trova in posizione : "; 
-  return i; 
-}
-  
-  }
- 
- cout << "L'elemento non e' stato trovato \n";
- goto Inizio;
- 
-}
+   cont +=1;
+  cout << "La lettera si trova in posizione: " <<i<<std::endl;  
 
+}  
+  }
+ cout<< "Il numero di volte in cui il carattere e' presente e' " ;
+ return cont;
+
+ if(cont==0) cout << "L'elemento non e' stato trovato \n";
+}
 
     
