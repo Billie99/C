@@ -57,10 +57,10 @@ int scuola::ricerca()
  if(this->alunno[i] == a)
 { 
    cont +=1;
-  cout << "La lettera si trova in posizione: " <<i<<std::endl;  
+  cout << "La lettera si trova in posizione: " << i << std::endl;  
 
-}  
-  }
+       }  
+   }
  cout<< "Il numero di volte in cui il carattere e' presente e' " ;
  return cont;
 
