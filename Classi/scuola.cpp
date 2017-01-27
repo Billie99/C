@@ -44,7 +44,7 @@ char* scuola::get()
 
 int scuola::ricerca()
 {
- int cont=0;
+ int cont = 0;
  char a;
  
  cout << "Inserisci il carattere da ricercare ";
@@ -57,11 +57,11 @@ int scuola::ricerca()
  if(this->alunno[i] == a)
 { 
  cont = cont + 1;
- cout << "La lettera si trova in posizione: " << i << std::endl;  
+ cout << "La lettera si trova in posizione : " << i << std::endl;  
  }
   
  }
- cout<< "Il numero di volte in cui il carattere e' presente e' " ;
+ cout << "Il numero di volte in cui il carattere e' presente e' : " ;
  return cont;
  }
 
