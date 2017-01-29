@@ -1,3 +1,8 @@
+/* Questo programma converte
+
+ un numero da decimale a binario */
+
+
 #include <iostream>
 #include <stdbool.h>
 
