@@ -1,3 +1,7 @@
+/* Questo programma converte un carattere
+
+ in formato binario */
+
 #include <iostream>
 
 using namespace std;
