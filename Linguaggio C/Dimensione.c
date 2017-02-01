@@ -1,0 +1,12 @@
+#include <stdio.h>
+#include <limits.h>
+
+int main()
+{
+
+ printf("La dimensione di una variabile int e': %d\n", sizeof(int));
+ printf("La dimensione int massima e': %d\n", INT_MAX);
+ printf("La dimensione int minima e': %d\n", INT_MIN);
+
+ return 0;
+}
