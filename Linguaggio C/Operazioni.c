@@ -9,20 +9,20 @@
 
 int main()
 {
- int numero;
  int numero1;
+ int numero2;
 
  printf("Inserisci il valore del primo numero\n");
- scanf("%d", &numero);
-
- printf("Inserisci il valore del secondo numero\n");
  scanf("%d", &numero1);
 
- printf("La somma e': %d\n",numero + numero1);
- printf("La differenza e': %d\n",numero - numero1);
- printf("Il prodotto e': %d\n",numero * numero1);
- printf("Il quoziente e': %d\n", numero / numero1);
+ printf("Inserisci il valore del secondo numero\n");
+ scanf("%d", &numero2);
 
+ printf("La somma e': %d\n",numero1 + numero2);
+ printf("La differenza e': %d\n",numero1 - numero2);
+ printf("Il prodotto e': %d\n",numero1 * numero2);
+ printf("Il quoziente e': %d\n", numero1 / numero2);
+ printf("Il resto e' : %d\n", numero1 % numero2);
  return 0;
 
 }
