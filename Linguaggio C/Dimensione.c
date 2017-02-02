@@ -1,6 +1,12 @@
 #include <stdio.h>
 #include <limits.h>
 
+ /* Per eseguire questo programma digitare da terminale
+   gcc -c Dimensione.c -o Dimensione.o
+   gcc Dimensione.o -o Dimensione */
+
+
+
 int main()
 {
 
