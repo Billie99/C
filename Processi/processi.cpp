@@ -8,9 +8,9 @@ using namespace std;
 
 int main(){
 
-int pid = getpid();
+int pid;
 
-cout << "Main Processo : PID  " << pid << endl;
+cout << "Main Processo : PID  " << getpid() << endl;
 cout << "Siamo nel processo padre \n";
 
 sleep(2);
