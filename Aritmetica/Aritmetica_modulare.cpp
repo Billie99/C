@@ -16,9 +16,10 @@ int main()
  cout << "Inserisci il giorno in numeri \n";
  cin >> c;
 
- if(a == 0 && c == 0)
+ if(a == 0 || c == 0)
 {
- cout << "Il numero di giorni e' " << a << endl;
+ cout << "Il numero di giorni non e' specificato \n";
+ exit(0);
 }
  else
 {
