@@ -4,7 +4,7 @@
 
 using namespace std;
 
-char* stringa(char* t)
+void stringa(char* t)
 {
  int len = strlen(t);
  int cont = 0;
@@ -30,8 +30,6 @@ char* stringa(char* t)
  sleep(2);  
 
  cout << "Abbiamo inseriti : " << cont << " " << "elementi nel vettore \n";
-
- return t;
 
 }
 
