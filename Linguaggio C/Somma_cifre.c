@@ -26,7 +26,7 @@ else
  somma = a + b + c;
 }
 
- printf("La somma delle cifre che hain inserito e': %d\n", somma);
+ printf("La somma delle cifre che hai inserito e': %d\n", somma);
 
  return 0;
 
