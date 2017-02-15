@@ -21,12 +21,10 @@ int main()
  if(a == 0 || c == 0)
 {
  cout << "Il numero di giorni non e' specificato \n";
- exit(0);
+ return 0;
 }
- else
-{
+
  z = (c + a) % 7;
-}
  cout << "Fra " << a << " giorni sara' " << z << endl;
 
  return 0;
