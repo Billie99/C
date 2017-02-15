@@ -15,7 +15,7 @@ int main()
  cout << "Inserisci il numero da determinare (ad esempio fra 10 giorni che giorno sara') \n";
  cin >> a;
 
- cout << "Inserisci il giorno in numeri \n";
+ cout << "Inserisci il giorno di oggi in numeri \n";
  cin >> c;
 
  if(a == 0 || c == 0)
