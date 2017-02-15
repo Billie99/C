@@ -14,8 +14,6 @@ int main()
  return 0;
 }
 
-else
-{
  int c = numero % 10;
  numero = numero / 10;
 
@@ -24,7 +22,7 @@ else
 
  int a = numero % 10;
  somma = a + b + c;
-}
+
 
  printf("La somma delle cifre che hai inserito e': %d\n", somma);
 
