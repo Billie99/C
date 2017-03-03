@@ -2,15 +2,15 @@
 
 int main()
 {
-  int numero;
-  int *p;
+  float numero;
+  float *p;
 
   printf("Inserisci un numero\n");
-  scanf("%d", &numero);
+  scanf("%f", &numero);
 
   p = &numero;
 
-  printf("Il valore della variabile e': %d\n", *p);
+  printf("Il valore della variabile e': %f\n", *p);
   printf("Il suo indirizzo e': %p\n", p);
 
   return 0;
