@@ -33,6 +33,5 @@ int main()
   media = somma / 3.0;
   printf("Media: %lf\n", media);
   
-  system("PAUSE");
   return 0;
 }
