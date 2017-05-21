@@ -9,12 +9,8 @@ int main()
 
  while ( numero < 11 )
 {
-
- if ( numero == 1 ) { printf("%d\t", numero);
- 	numero = numero + 1; }
-
- if ( numero == 2 ) { printf("%d\t", numero);
-	numero = numero + 2; }
+ printf("%d\t", numero);
+ numero = numero + 1;
 
 }
 
