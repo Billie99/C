@@ -11,7 +11,7 @@ int main()
 
  struct timespec tempo;
 
- tempo.tv_sec = 1; // 1 secondo
+ tempo.tv_sec = 1.5; // 1 secondo
  tempo.tv_nsec = 0;
 
  printf("Inserisci il numero di partenza ");
@@ -24,6 +24,7 @@ int main()
 
  printf("Numero di partenza: %d\n", numero);
  printf("\n");
+ nanosleep( &tempo, NULL);
 
  printf("Viaa!!\n");
  nanosleep( &tempo, NULL );
