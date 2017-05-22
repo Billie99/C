@@ -5,26 +5,27 @@
 int main()
 {
  // inizializzazione delle variabili
- int numero = 0;
- int conta = 0;
+
+ int number = 0;
+ int count = 0;
  int temp = 0;
- int massimo = 0;
+ int max = 0;
 
- temp = numero;
+ temp = number;
 
- while ( conta <  11 )
+ while ( count <  11 )
 {
 
  printf("Inserisci un numero ");
- scanf("%d", &numero);
+ scanf("%d", &number);
 
- conta = conta + 1;
+ if ( number > temp ) { max = number; }
 
- if ( numero > temp ) { massimo = numero; }
+ count = count + 1;
 
 }
 
-printf("Il numero e': %d\n", massimo);
+ printf("Il numero massimo e': %d\n", max);
 
  return 0;
 }
