@@ -17,9 +17,6 @@ int main()
  printf("Inserisci il numero di partenza ");
  scanf("%d", &numero);
 
- printf("Inserisci il numero arrivo ");
- scanf("%d", &conta);
-
  printf("\n");
 
  printf("Numero di partenza: %d\n", numero);
@@ -29,11 +26,12 @@ int main()
  printf("Viaa!!\n");
  nanosleep( &tempo, NULL );
 
- while( numero <= conta )
+ while( conta < 5 )
 {
  printf("%d\n", numero);
 
  nanosleep( &tempo, NULL );
+ conta = conta + 1;
 
  numero = numero + 3;
 }
