@@ -8,10 +8,12 @@ int main()
 
  int number = 0;
  int count = 0;
- int temp = 0;
  int max = 0;
 
- temp = number;
+ printf("Inserisci un valore da cui partire ");
+ scanf("%d", &number);
+
+ max = number;
 
  while ( count <  11 )
 {
@@ -19,7 +21,7 @@ int main()
  printf("Inserisci un numero ");
  scanf("%d", &number);
 
- if ( number > temp ) { max = number; }
+ if ( number > max ) { max = number; }
 
  count = count + 1;
 
