@@ -10,12 +10,12 @@ int main()
  int count = 0;
  int max = 0;
 
- printf("Inserisci un valore da cui partire ");
+ printf("Inserisci un numero ");
  scanf("%d", &number);
 
  max = number;
 
- while ( count <  11 )
+ while ( count <  10 )
 {
 
  printf("Inserisci un numero ");

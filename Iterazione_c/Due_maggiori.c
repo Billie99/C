@@ -11,13 +11,13 @@ int main()
  int minimo = 0;
 
  // input primo valore
- printf("Inserisci i primi numeri ");
+ printf("Inserisci i numeri ");
  scanf("%d", &numero);
 
  massimo = numero;
 
  // input secondo valore
- printf("Inserisci i primi numeri ");
+ printf("Inserisci i numeri ");
  scanf("%d", &numero);
 
  if ( numero > massimo )
@@ -40,7 +40,7 @@ int main()
 
       massimo = numero; }
 
- if ( numero > minimo ) { minimo = numero; }
+ if ( numero > minimo && numero < massimo ) { minimo = numero; }
 
  conta = conta + 1;
 
