@@ -38,8 +38,9 @@ int main()
 
  if ( numero > massimo ) { minimo = massimo;
 
-      massimo = numero;
-}
+      massimo = numero; }
+
+ if ( numero > minimo ) { minimo = numero; }
 
  conta = conta + 1;
 
