@@ -6,8 +6,12 @@ int main()
  int numero;
  int conta;
  int passi = 0;
+ char carattere;
 
  do {
+
+ printf("Disegna carattere con ");
+ scanf("%c", &carattere);
 
  printf("Inserisci il lato (min 1, max 20) ");
  scanf("%d", &numero);
@@ -26,7 +30,7 @@ int main()
  while ( conta < numero )
 {
 
- printf("*");
+ printf("%c", carattere);
  conta = conta + 1;
 
 }
