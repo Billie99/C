@@ -7,7 +7,7 @@ int main()
  int colonna;
  int righe;
 
- char carattere;
+ int carattere;
 
  printf("Disegna con ");
  scanf("%c", &carattere);
