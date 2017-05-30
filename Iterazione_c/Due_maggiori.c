@@ -40,7 +40,7 @@ int main()
 
       massimo = numero; }
 
- else if ( numero > minimo && numero < massimo ) { minimo = numero; }
+ else if ( numero > minimo ) { minimo = numero; }
 
  conta = conta + 1;
 
