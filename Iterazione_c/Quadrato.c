@@ -6,7 +6,7 @@ int main()
  int numero;
  int conta;
  int passi = 0;
- char carattere;
+ int carattere;
 
  printf("Disegna carattere con ");
  scanf("%c", &carattere);
