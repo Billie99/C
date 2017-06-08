@@ -1,37 +1,82 @@
 #include <stdio.h>
+#include <math.h>
+
+#define TRUE 1
+#define FALSE 0
 
 int main()
 {
 
  int numero;
+ int binario = TRUE;
  int somma = 0;
- int a, b, c;
- int d, e, f, g, h;
+ int decimale;
+ int binary;
+ int potenza;
+ int i;
 
  do {
 
  printf("Inserisci un numero binario di 8 bit >> ");
  scanf("%d", &numero);
 
+ decimale = numero;
+
+  //verifica se un numero e' binario
+   while ( numero > 0 )
+   {
+        binary = numero % 10;
+
+	if ( binary == 0 || binary == 1 )
+        {
+	   binario = TRUE;
+ 	}
+
+        else
+        {
+	   binario = FALSE;
+	}
+
+	numero = numero / 10;
+   }
+
+
+ //verifica se e' negativo
+
  if ( numero < 0 )
  {
     printf("Non sono accettati i numeri negativi \n");
  }
 
- } while ( numero < 0 );
 
- a = ( numero & ( 1 << 0 ));
- b = ( numero & ( 1 << 1 ));
- c = ( numero & ( 1 << 2 ));
- d = ( numero & ( 1 << 3 ));
- e = ( numero & ( 1 << 4 ));
- f = ( numero & ( 1 << 5 ));
- g = ( numero & ( 1 << 6 ));
- h = ( numero & ( 1 << 7 ));
+ else if (!binario)
+ {
+   printf("Il numero non e' binario \n");
+ }
 
- somma = a + b + c + d + e + f + g + h;
 
- printf("Il numero decimale e' %d\n", somma);
+ } while ( numero < 0 || binario == FALSE );
+
+
+
+ i = 0;
+ while ( i < 8 )
+ {
+
+   binary = decimale % 10;
+
+   if ( binary == 1 )
+   {
+      potenza = pow(2.0, i);
+      somma = somma + potenza;
+   }
+
+   decimale = decimale / 10;
+   i = i + 1;
+
+ }
+
+ printf("Il valore in decimale e' -> %d \n", somma);
 
  return 0;
 }
