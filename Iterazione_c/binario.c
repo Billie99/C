@@ -25,21 +25,14 @@ int main()
   //verifica se un numero e' binario
    while ( numero > 0 )
    {
-        binary = numero % 10;
+         binary = numero % 10;
+         numero = numero / 10;
 
-	if ( binary == 0 || binary == 1 )
-        {
-	   binario = TRUE;
- 	}
-
-        else
-        {
-	   binario = FALSE;
-	}
-
-	numero = numero / 10;
+	 if ( binary != 1 || binary != 0 )
+         {
+	    binario = FALSE;
+ 	 }
    }
-
 
  //verifica se e' negativo
 
@@ -49,7 +42,7 @@ int main()
  }
 
 
- else if (!binario)
+ else if (binario == FALSE)
  {
    printf("Il numero non e' binario \n");
  }
