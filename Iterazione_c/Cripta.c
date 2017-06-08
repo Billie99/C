@@ -24,8 +24,7 @@ int main()
 	}
 
   } while ( numero < 0 || numero > 9999 );
-
- temp = 0;
+	
 
  // prima cifratura
  cifra4 = numero % 10;
