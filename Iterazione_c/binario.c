@@ -11,7 +11,7 @@ int main()
  int binario = TRUE;
  int somma = 0;
  int decimale;
- int binary;
+ int bit;
  int potenza;
  int i;
 
@@ -25,10 +25,10 @@ int main()
   //verifica se un numero e' binario
    while ( numero > 0 )
    {
-         binary = numero % 10;
+         bit = numero % 10;
          numero = numero / 10;
 
-	 if ( binary != 1 || binary != 0 )
+	 if ( bit != 1 || bit != 0 )
          {
 	    binario = FALSE;
  	 }
@@ -56,9 +56,9 @@ int main()
  while ( i < 8 )
  {
 
-   binary = decimale % 10;
+   bit = decimale % 10;
 
-   if ( binary == 1 )
+   if ( bit == 1 )
    {
       potenza = pow(2.0, i);
       somma = somma + potenza;

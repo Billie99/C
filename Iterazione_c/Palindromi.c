@@ -6,6 +6,7 @@
 
 int main()
 {
+
   int numero;
   int conta;
   int cifra1;

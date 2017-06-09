@@ -2,6 +2,7 @@
 
 int main()
 {
+
   int numero;
   int conta;
   int cifra1, cifra2, cifra3, cifra4;
@@ -24,27 +25,26 @@ int main()
 	}
 
   } while ( numero < 0 || numero > 9999 );
-	
 
  // prima cifratura
  cifra4 = numero % 10;
  numero = numero / 10;
- somma4 = cifra4 + 7;
+ somma4 = ( cifra4 + 7 ) % 10;
 
  // seconda cifratura
  cifra3 = numero % 10;
  numero = numero / 10;
- somma3 = cifra3 + 7;
+ somma3 = ( cifra3 + 7 ) %10;
 
  // terza cifratura
  cifra2 = numero % 10;
  numero = numero / 10;
- somma2 = cifra2 + 7;
+ somma2 = ( cifra2 + 7) % 10;
 
  // quarta cifratura
  cifra1 = numero % 10;
  numero = numero / 10;
- somma1 = cifra1 + 7;
+ somma1 = ( cifra1 + 7 ) % 10;
 
 
  // scambio
@@ -60,7 +60,6 @@ int main()
  somma4 = temp;
 
  printf("Il numero criptato e': %d%d%d%d \n", somma1, somma2, somma3, somma4);
-
 
  return 0;
 }

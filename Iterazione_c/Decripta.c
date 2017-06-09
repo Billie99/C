@@ -13,7 +13,7 @@ int main()
 
 
   do {
-	printf("Inserisci crittografato ");
+	printf("Inserisci il numero criptato ");
 	scanf("%d", &numero);
 
 	if ( numero < 0 )
