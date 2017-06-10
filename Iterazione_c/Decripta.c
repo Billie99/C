@@ -33,25 +33,25 @@ int main()
  // decifrazione della quarta cifra
  cifra4 = numero % 10;
  numero = numero / 10;
- diff4 = cifra4 - 7;
+ diff4 = ( cifra4 +3 ) % 10;
 
  diff3 = 0;
  // decifrazione della terza cifra
  cifra3 = numero % 10;
  numero = numero / 10;
- diff3 = cifra3 - 7;
+ diff3 = ( cifra3 + 3 ) % 10;
 
  diff2 = 0;
  // decifrazione della seconda cifra
  cifra2 = numero % 10;
  numero = numero / 10;
- diff2 = cifra2 - 7;
+ diff2 = ( cifra2 + 3 ) % 10;
 
  diff1 = 0;
  // decifrazione della prima cifra
  cifra1 = numero % 10;
  numero = numero / 10;
- diff1 = cifra1 - 7;
+ diff1 = ( cifra1 + 3 ) % 10;
 
 
  // primo scambio
