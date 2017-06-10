@@ -34,7 +34,7 @@ int main()
  // seconda cifratura
  cifra3 = numero % 10;
  numero = numero / 10;
- somma3 = ( cifra3 + 7 ) %10;
+ somma3 = ( cifra3 + 7 ) % 10;
 
  // terza cifratura
  cifra2 = numero % 10;
